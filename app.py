@@ -4,13 +4,13 @@ import streamlit as st
 
 st.set_page_config(page_title="Segmentasi Citra - Thresholding", layout="wide")
 st.title("Segmentasi Citra Digital: Teknik Thresholding")
-st.caption("UTS Pengolahan Citra Digital")
+st.caption("Tugas Pengolahan Citra Digital")
 
 
 def buat_citra_contoh():
     img = np.full((320, 480, 3), 236, np.uint8)
     font = cv2.FONT_HERSHEY_SIMPLEX
-    cv2.putText(img, "LAPORAN UTS CITRA DIGITAL", (30, 50), font, 0.8, (30, 30, 30), 2, cv2.LINE_AA)
+    cv2.putText(img, "LAPORAN CITRA DIGITAL", (30, 50), font, 0.8, (30, 30, 30), 2, cv2.LINE_AA)
     baris = [
         "Segmentasi memisahkan objek dari",
         "latar belakang menggunakan nilai ambang.",
