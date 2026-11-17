@@ -3,7 +3,7 @@
 
 # SegmentasiCitra — Implementasi Teknik Thresholding Menggunakan VSCode
 
-Proyek ini dibuat sebagai bagian dari **Ujian Tengah Semester (UTS)** mata kuliah **Pengolahan Citra Digital**.
+Proyek ini dibuat sebagai bagian dari **Tugas** mata kuliah **Pengolahan Citra Digital**.
 Fokus pembahasan adalah **segmentasi citra menggunakan berbagai teknik thresholding** untuk memisahkan objek dari latar belakang.
 Seluruh proses percobaan dilakukan menggunakan **Visual Studio Code (VSCode)** dengan bahasa **Python** serta pustaka **OpenCV**, **NumPy**, dan **Matplotlib**.
 
@@ -254,7 +254,7 @@ Menentukan parameter ideal menjadi bagian penting dalam proses segmentasi yang e
 
 ## Tentang Penulis
 
-Proyek ini dikerjakan oleh **Febri Putra Ananda dengan NIM 20241030019 Program Studi Sistem Informasi sebagai bagian proyek dari UTS mata kuliah **Pengolahan Citra Digital**.
+Proyek ini dikerjakan oleh **Febri Putra Ananda** dengan NIM 20241030019 Program Studi Sistem Informasi sebagai bagian proyek dari UTS mata kuliah **Pengolahan Citra Digital**.
 Dosen pengampu: **Dr. Marsani Asfi**
 
 
