@@ -71,6 +71,9 @@ hasil_segmentasi = segment_document(gray, block_size, C)
 st.subheader("Perbandingan Metode")
 st.write(f"Nilai threshold optimal (Otsu): **{int(otsu_value)}**")
 
+lebar = st.sidebar.slider("Lebar tiap gambar (px)", 150, 500, 220, step=10)
+jumlah_kolom = st.sidebar.radio("Kolom per baris", [2, 3, 6], index=1, horizontal=True)
+
 hasil = [
     ("Grayscale (asli)", gray),
     (f"Global (T={T})", thresh_global),
@@ -80,10 +83,10 @@ hasil = [
     ("Segmentasi Dokumen Lengkap", hasil_segmentasi),
 ]
 
-for baris in range(0, len(hasil), 3):
-    kolom = st.columns(3)
-    for kol, (nama, gambar) in zip(kolom, hasil[baris:baris + 3]):
-        kol.image(gambar, caption=nama, use_container_width=True)
+for baris in range(0, len(hasil), jumlah_kolom):
+    kolom = st.columns(jumlah_kolom)
+    for kol, (nama, gambar) in zip(kolom, hasil[baris:baris + jumlah_kolom]):
+        kol.image(gambar, caption=nama, width=lebar)
 
 st.subheader("Panduan Singkat")
 st.markdown(
